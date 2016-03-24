@@ -64,9 +64,11 @@ body
     padding-right: 0.5em;
 }
 
-div #links
+.icon_links_container
 {
-    float: left;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1em;
 }
 
 #icons_field
