@@ -1,6 +1,26 @@
 /* font-family: 'Josefin Sans', sans-serif; */
 /* font-family: 'Arimo', sans-serif; */
 
+/* Overwite */
+.content
+{
+    max-width: 100%;
+}
+
+#menu .pure-menu-heading
+{
+    background: #d7003a;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 130%;
+}
+
+.pure-menu-link
+{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 130%;
+}
+
+
 body
 {
     font-family: 'Arimo', 'Noto Sans JP', monospace;
@@ -13,24 +33,13 @@ body
     -moz-border-radius:    50%;
 }
 
-.pure-menu-link
-{
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 130%;
-}
-
-.pure-menu-heading
-{
-    font-family: 'Josefin Sans', sans-serif;
-}
-
 #side_icon
 {
     display: block;
     margin: auto;
 }
 
-div#links
+div #links
 {
     float: left;
 }
@@ -42,7 +51,8 @@ div#links
 
 .mopp_icon,
 .reflect canvas,
-.reflected {
+.reflected
+{
     width: 100%;
 }
 

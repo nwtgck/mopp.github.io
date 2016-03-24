@@ -41,7 +41,7 @@ The content `<div>` is where all your content goes.
 .content {
     margin: 0 auto;
     padding: 0 2em;
-    max-width: 100%;
+    max-width: 800px;
     margin-bottom: 50px;
     line-height: 1.6em;
 }
@@ -126,12 +126,9 @@ appears on the left side of the page.
     /*
     This styles the selected menu item `<li>`.
     */
-    #menu .pure-menu-selected {
-        background: #333;
-    }
-
+    #menu .pure-menu-selected,
     #menu .pure-menu-heading {
-        background: #d7003a
+        background: #1f8dd6;
     }
         /*
         This styles a link within a selected menu item `<li>`.
@@ -144,7 +141,7 @@ appears on the left side of the page.
     This styles the menu heading.
     */
     #menu .pure-menu-heading {
-        font-size: 130%;
+        font-size: 110%;
         color: #fff;
         margin: 0;
     }
@@ -248,3 +245,4 @@ Hides the menu at `48em`, but modify this based on your app's needs.
         left: 150px;
     }
 }
+
