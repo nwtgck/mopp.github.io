@@ -28,6 +28,10 @@
     padding-bottom: 1em;
 }
 
+.header
+{
+    padding: 0.5em 2em 0;
+}
 
 html
 {
@@ -100,13 +104,16 @@ footer
 }
 
 
-@media (min-width: 48em) {
+@media (min-width: 48em)
+{
     #footer_content
     {
         margin-left: 160px;
     }
 }
-@media (max-width: 48em) {
+
+@media (max-width: 48em)
+{
     #footer_content
     {
         margin-left: 5px;
