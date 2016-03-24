@@ -57,6 +57,13 @@ body
     margin: auto;
 }
 
+.menu_icon
+{
+    text-align:center;
+    width: 1em;
+    padding-right: 0.5em;
+}
+
 div #links
 {
     float: left;

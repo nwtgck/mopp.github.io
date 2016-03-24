@@ -22,9 +22,11 @@ html
                     img#side_icon.circle_img(src = 'img/mopp_main_icon.png', style = 'max-width: 80%')
                     br
                     ul.pure-menu-list
-                        // li.pure-menu-item: a.pure-menu-link(href = '/') Home
                         for obj, path in public._data
-                            li.pure-menu-item: a.pure-menu-link(href = '#{path}') #{obj.title}
+                            li.pure-menu-item
+                                a.pure-menu-link(href = '#{path}')
+                                    i(class = 'menu_icon fa fa-#{obj.icon}')
+                                    span #{obj.title}
                 br
                 div#links
                     a(href = 'https://github.com/mopp'):                                    i(class = 'fa fa-github')

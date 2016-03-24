@@ -1,14 +1,18 @@
 {
     "/": {
-        "title": "Home"
+        "title": "Home",
+        "icon": "desktop"
     },
     "profile": {
-        "title": "Profile"
+        "title": "Profile",
+        "icon": "user"
     },
     "products": {
-        "title": "Products"
+        "title": "Products",
+        "icon": "file"
     },
     "contacts": {
-        "title": "Contacts"
+        "title": "Contacts",
+        "icon": "send-o"
     }
 }
