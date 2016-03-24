@@ -5,6 +5,7 @@ html
         meta(name = 'viewport', content = 'width=device-width, initial-scale=1')
         title #{site_title}
         link(rel = 'stylesheet' href = 'http://yui.yahooapis.com/pure/0.6.0/pure-min.css')
+        link(rel = 'stylesheet' href = 'http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css')
         link(rel = 'stylesheet' href = 'http://fonts.googleapis.com/earlyaccess/notosansjp.css')
         link(rel = 'stylesheet' href = 'https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Arimo:400,700')
         link(rel = 'stylesheet' href = 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
@@ -21,14 +22,14 @@ html
                     img#side_icon.circle_img(src = 'img/mopp_main_icon.png', style = 'max-width: 80%')
                     br
                     ul.pure-menu-list
-                        li.pure-menu-item: a.pure-menu-link(href = '/') Home
-                        for tag in ['Profile', 'Products', 'Contacts']
-                            li.pure-menu-item: a.pure-menu-link(href = '/#{tag}') #{tag}
+                        // li.pure-menu-item: a.pure-menu-link(href = '/') Home
+                        for obj, path in public._data
+                            li.pure-menu-item: a.pure-menu-link(href = '#{path}') #{obj.title}
                 br
                 div#links
-                    a(href = 'https://github.com/mopp'): i(class = 'fa fa-github')
-                    a(href = 'https://twitter.com/mopp_jp'): i(class = 'fa fa-twitter')
-                    a(href = 'https://www.facebook.com/yuta.kobiyama'): i(class = 'fa fa-facebook-official')
+                    a(href = 'https://github.com/mopp'):                                    i(class = 'fa fa-github')
+                    a(href = 'https://twitter.com/mopp_jp'):                                i(class = 'fa fa-twitter')
+                    a(href = 'https://www.facebook.com/yuta.kobiyama'):                     i(class = 'fa fa-facebook-official')
                     a(href = 'https://www.amazon.co.jp/gp/registry/wishlist/L86ZMQY2FVE1'): i(class = 'fa fa-amazon')
 
             div#main

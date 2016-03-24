@@ -1,0 +1,14 @@
+{
+    "/": {
+        "title": "Home"
+    },
+    "profile": {
+        "title": "Profile"
+    },
+    "products": {
+        "title": "Products"
+    },
+    "contacts": {
+        "title": "Contacts"
+    }
+}
