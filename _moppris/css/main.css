@@ -1,17 +1,20 @@
 /* font-family: 'Josefin Sans', sans-serif; */
 /* font-family: 'Arimo', sans-serif; */
 
-.circle_img {
+body
+{
+    font-family: 'Arimo', 'Noto Sans JP', monospace;
+}
+
+.circle_img
+{
     border-radius:         50%;
     -webkit-border-radius: 50%;
     -moz-border-radius:    50%;
 }
 
-body {
-    font-family: 'Arimo', 'Noto Sans JP', monospace;
-}
-
-.pure-menu-link {
+.pure-menu-link
+{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 130%;
 }
@@ -21,12 +24,19 @@ body {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-#side_icon {
+#side_icon
+{
     display: block;
     margin: auto;
 }
 
-.icon_holder {
+div#links
+{
+    float: left;
+}
+
+.icon_holder
+{
     padding-top: 15px;
 }
 
@@ -36,6 +46,3 @@ body {
     width: 100%;
 }
 
-div#links {
-    float: left;
-}
