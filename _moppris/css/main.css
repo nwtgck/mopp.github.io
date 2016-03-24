@@ -26,9 +26,13 @@ body {
     margin: auto;
 }
 
+.icon_holder {
+    padding-top: 15px;
+}
+
 .mopp_icon,
-.reflected
-{
+.reflect canvas,
+.reflected {
     width: 100%;
 }
 
