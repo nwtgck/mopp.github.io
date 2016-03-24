@@ -62,9 +62,14 @@ div #links
     float: left;
 }
 
+#icons_field
+{
+    border-bottom: 1px solid #eee;
+}
+
 .icon_holder
 {
-    padding-top: 15px;
+    padding-top: 10px;
 }
 
 .mopp_icon,
