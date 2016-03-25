@@ -2,11 +2,6 @@
 /* font-family: 'Arimo', sans-serif; */
 
 /* Overwite */
-.content
-{
-    max-width: 100%;
-}
-
 #menu .pure-menu-heading
 {
     background: #d7003a;
@@ -32,6 +27,12 @@
 {
     padding: 0.5em 2em 0;
 }
+
+.content
+{
+    max-width: 100%;
+}
+
 
 html
 {
