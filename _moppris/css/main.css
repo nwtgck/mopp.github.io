@@ -89,13 +89,34 @@ body
 #icons_field
 {
     border-bottom: 1px solid #eee;
+    padding: 1em 0;
 }
 
-.mopp_icon,
-.reflect canvas,
-.reflected
+.pure-g#icons_field > div {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.top_icon
 {
-    width: 100%;
+    padding: 1em 0.5em;
+}
+
+.pure-img {
+    margin: auto;
+    border: solid 1px #CCC;
+    -moz-box-shadow: 1px 1px 5px #999;
+    -webkit-box-shadow: 1px 1px 5px #999;
+    box-shadow: 1px 1px 5px #999;
+}
+
+#github_info
+{
+    margin-top: 2em;
+    height: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 footer
@@ -126,11 +147,11 @@ footer
 
     .icon_holder
     {
-        padding: 0.5em 1em;
+        padding: 0.5em 4em;
     }
 }
 
-@media (max-width: 47em)
+@media (max-width: 48em)
 {
     #footer_content
     {
