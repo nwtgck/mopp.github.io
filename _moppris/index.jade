@@ -1,8 +1,5 @@
 div.pure-g#icons_field
     for img in public.img.mopp_icons._contents
-        div.pure-u-2-24.pure-u-md-2-24
-        div.pure-u-4-24.pure-u-md-2-24.icon_holder
-            img(src = 'img/mopp_icons/#{img}', alt = '#{img}', class = 'reflect mopp_icon')
-        div.pure-u-2-24.pure-u-md-2-24
-
-h2 This is top page.
+        div.pure-u-8-24.pure-u-md-4-24
+            div.icon_holder
+                img(src = 'img/mopp_icons/#{img}', alt = '#{img}', class = 'reflect mopp_icon')

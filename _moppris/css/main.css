@@ -33,6 +33,11 @@ html, button, input, select, textarea,
     padding: 0.5em 2em 0;
 }
 
+.header h1
+{
+    margin: 0.1em 0;
+}
+
 .content
 {
     max-width: 100%;
@@ -86,11 +91,6 @@ body
     border-bottom: 1px solid #eee;
 }
 
-.icon_holder
-{
-    padding-top: 10px;
-}
-
 .mopp_icon,
 .reflect canvas,
 .reflected
@@ -123,12 +123,22 @@ footer
     {
         margin-left: 160px;
     }
+
+    .icon_holder
+    {
+        padding: 0.5em 1em;
+    }
 }
 
-@media (max-width: 48em)
+@media (max-width: 47em)
 {
     #footer_content
     {
         margin-left: 5px;
+    }
+
+    .icon_holder
+    {
+        padding: 0.2em 0.3em;
     }
 }
