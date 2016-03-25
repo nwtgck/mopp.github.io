@@ -2,6 +2,11 @@
 /* font-family: 'Arimo', sans-serif; */
 
 /* Overwite */
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+    font-family: 'Arimo', 'Noto Sans JP', monospace;
+}
+
 #menu .pure-menu-heading
 {
     background: #d7003a;
