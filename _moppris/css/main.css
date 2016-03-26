@@ -54,6 +54,8 @@ html
 
 body
 {
+    background-color: #fef4f4;
+
     font-family: 'Arimo', 'Noto Sans JP', monospace;
 
     position: relative;
