@@ -32,6 +32,7 @@ html, button, input, select, textarea,
 .header
 {
     padding: 0.5em 2em 0;
+    margin-bottom: 1em;
 }
 
 .header h1
@@ -133,7 +134,7 @@ footer
 #index-icon-field
 {
     border-bottom: 1px solid #eee;
-    padding: 1em 0;
+    padding-bottom: 1.5em;
 }
 
 .icon-holder
