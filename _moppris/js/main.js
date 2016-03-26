@@ -1,6 +1,6 @@
 window.onload = function()
 {
-    $('.fa').on({
+    $('.menu-icon').on({
         'mouseenter':function(){
             $(this).addClass('fa-inverse');
         },

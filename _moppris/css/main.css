@@ -3,7 +3,8 @@
 
 /* Overwite */
 html, button, input, select, textarea,
-.pure-g [class *= "pure-u"] {
+.pure-g [class *= "pure-u"]
+{
     font-family: 'Arimo', 'Noto Sans JP', monospace;
 }
 
@@ -44,6 +45,7 @@ html, button, input, select, textarea,
 }
 
 
+/* _layout.jade */
 html
 {
     height: 100%;
@@ -66,44 +68,65 @@ body
     -moz-border-radius:    50%;
 }
 
-#side_icon
+#menu-mopp-icon
 {
+    width: 80%;
     display: block;
     margin: auto;
+    padding: 1em 0;
 }
 
-.menu_icon
+.menu-icon
 {
     text-align: center;
     width: 1em;
     padding-right: 0.5em;
 }
 
-.icon_links_container
+#menu-link-container
 {
     display: flex;
     justify-content: space-between;
-    padding-right: 1em;
 }
 
-#icons_field
+footer
 {
-    border-bottom: 1px solid #eee;
-    padding: 1em 0;
+    position: absolute;
+    bottom:0;
+
+    height: 3em;
+    width: 100%;
+    background: #d7003a;
+    color: #191818;
 }
 
-.pure-g#icons_field > div {
+#footer-content
+{
+    position: absolute;
+    top: 1em;
+    bottom: 1em;
+}
+
+
+/* index.jade */
+.pure-g#index-icon-field > div {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-.top_icon
+#index-icon-field
+{
+    border-bottom: 1px solid #eee;
+    padding: 1em 0;
+}
+
+.icon-holder
 {
     padding: 1em 0.5em;
 }
 
-.pure-img {
+.icon-holder > .pure-img {
     margin: auto;
     border: solid 1px #CCC;
     -moz-box-shadow: 1px 1px 5px #999;
@@ -119,28 +142,11 @@ body
     overflow-x: hidden;
 }
 
-footer
-{
-    position: absolute;
-    bottom:0;
 
-    height: 3em;
-    width: 100%;
-    background: #d7003a;
-    color: #191818;
-}
-
-#footer_content
-{
-    position: absolute;
-    top: 1em;
-    bottom: 1em;
-}
-
-
+/* Responsive */
 @media (min-width: 48em)
 {
-    #footer_content
+    #footer-content
     {
         margin-left: 160px;
     }
@@ -153,7 +159,7 @@ footer
 
 @media (max-width: 48em)
 {
-    #footer_content
+    #footer-content
     {
         margin-left: 5px;
     }
