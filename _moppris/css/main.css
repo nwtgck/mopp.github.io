@@ -46,6 +46,57 @@ html, button, input, select, textarea,
 }
 
 
+/* General */
+.pure-g#index-icon-field > div,
+.pure-g#profile-grid > div,
+.pure-g#profile-grid-who > div
+{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+[class *= "icon-head"]
+{
+    vertical-align: baseline;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+[class *= "icon-head"] > i
+{
+    text-align: center;
+    width: 1em;
+    margin-right: 0.5em;
+}
+
+.icon-head-h0
+{
+    font-family: 'Arimo', 'Noto Sans JP', monospace;
+}
+
+.icon-head-h1
+{
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0.8em 0;
+}
+
+.icon-head-h2
+{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0.5em 0;
+    border-bottom: thin solid;
+}
+
+.icon-head-h3
+{
+    font-size: 1.1em;
+    font-weight: normal;
+    margin: 0.25em 0;
+}
+
+
 /* _layout.jade */
 html
 {
@@ -126,13 +177,6 @@ footer
 
 
 /* index.jade */
-.pure-g#index-icon-field > div
-{
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
 #index-icon-field
 {
     border-bottom: 1px solid #eee;
@@ -162,17 +206,65 @@ footer
 }
 
 
+/* profile.jade */
+.profile-header
+{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+#profile-grid > .pad-box
+{
+    padding: 0.5em 1em;
+}
+
+.profile-container
+{
+    padding: 1em;
+    border: solid 1px #CCC;
+    box-shadow: 1px 1px 5px #999;
+}
+
+.profile-sub-container
+{
+    padding-left: 1.5em;
+    margin-bottom: 1em;
+    margin: 0 0.5em 1em 0.5em;
+    border-bottom: solid 1px #CCC;
+}
+
+.grid-icon-showcase
+{
+    text-align: center;
+}
+
+.grid-icon-showcase [class *= 'devicon'],
+.grid-icon-showcase [class *= 'fa-']
+{
+    font-size: 3em;
+}
+
+.grid-icon-showcase p
+{
+    margin: 0;
+    padding: 0;
+}
+
+.grid-icon-showcase .icon-box
+{
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+
 /* Responsive */
 @media (min-width: 48em)
 {
     #footer-content
     {
         margin-left: 160px;
-    }
-
-    .icon_holder
-    {
-        padding: 0.5em 4em;
     }
 }
 
@@ -181,10 +273,5 @@ footer
     #footer-content
     {
         margin-left: 5px;
-    }
-
-    .icon_holder
-    {
-        padding: 0.2em 0.3em;
     }
 }
