@@ -31,7 +31,7 @@ html, button, input, select, textarea,
 
 .header
 {
-    padding: 0.5em 2em 0;
+    padding: 0 2em;
     margin-bottom: 1em;
 }
 
@@ -66,7 +66,7 @@ html, button, input, select, textarea,
 {
     text-align: center;
     width: 1em;
-    margin-right: 0.5em;
+    margin-right: 0.3em;
 }
 
 .icon-head-h0
@@ -179,8 +179,7 @@ footer
 /* index.jade */
 #index-icon-field
 {
-    border-bottom: 1px solid #eee;
-    padding-bottom: 1.5em;
+    padding-bottom: 0.5em;
 }
 
 .icon-holder
@@ -197,12 +196,62 @@ footer
     box-shadow: 1px 1px 5px #999;
 }
 
-#github_info
+#github-info-container h2,
+#github-info-container h3
 {
-    margin-top: 2em;
-    height: 300px;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    margin: 0.25em 0.5em;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#github-info-container ul
+{
+    list-style-type: none;
+    margin: 0.5em 0;
+    padding: 0;
+}
+
+#github-info-container li
+{
+    margin: 0.5em 1em;
+    padding: 0.25em 0.5em;
+    border: solid 2px #89c3eb;
+    border-radius:12px;
+    text-align: center;
+}
+
+.github-repo-name a
+{
+    text-decoration: none;
+    color: #1e50a2;
+}
+
+.github-repo-name
+{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: left;
+}
+
+.github-repo-lang,
+.github-repo-updated,
+.github-repo-star
+{
+    font-weight: bold;
+    padding: 0 0.3em;
+}
+
+.github-repo-star-tag
+{
+    color: #fcc800;
+}
+
+.github-repo-lang-tag,
+.github-repo-lang,
+.github-repo-updated-tag,
+.github-repo-updated
+{
+    font-size: 0.8em;
 }
 
 

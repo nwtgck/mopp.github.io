@@ -1,4 +1,32 @@
+mixin icon-head(h, icon, text)
+    div(class = 'icon-head-h#{h}')
+        i(class!= icon)
+        span= text
+
 div.pure-g#index-icon-field
     for img in public.img.mopp_icons._contents
         div.pure-u-8-24.pure-u-md-4-24.icon-holder
             img.pure-img(src = 'img/mopp_icons/#{img}', alt = '#{img}')
+
+#github-info-container
+    +icon-head(2, 'fa fa-github-square', 'Github Info')
+    .pure-g
+        .pure-u-24-24.pure-u-md-12-24
+            h3 Repositories
+            ul#github-repos
+                // li
+                //     .github-repo-name.icon-head-h0
+                //         i.fa.fa-quote-right
+                //         a(target='_blank', href = 'https://github.com/mopp/Axel') Axel
+                //     .github-repo-desc
+                //         | This is Operating System.
+                //     span.github-repo-updated-tag Update:
+                //     span.github-repo-updated 2016-03-26
+                //     span.github-repo-lang-tag Lang:
+                //     span.github-repo-lang C
+                //     div
+                //         span.github-repo-star-tag: i.fa.fa-star
+                //         span.github-repo-star 30
+        .pure-u-24-24.pure-u-md-12-24
+            h3 Public Activity
+            #public-activity
