@@ -1,7 +1,7 @@
 window.onload = function()
 {
     const NUM_REPOS = 5;
-    const NUM_ACTIVITIES = 5;
+    const NUM_ACTIVITIES = 10;
     const API_URL_PUBLIC_ACTIVITY = 'https://api.github.com/users/mopp/events/public?per_page=' + NUM_ACTIVITIES;
     const API_URL_REPOS = 'https://api.github.com/users/mopp/repos?per_page=60';
     const DEFAULT_OPTION = {
@@ -30,7 +30,7 @@ window.onload = function()
             return y.stars - x.stars;
         });
 
-        var list = $('ul#github-repos');
+        var doms = ''
         for (var i = 0; i < NUM_REPOS; ++i) {
             var repo = repos[i];
             var dom =
@@ -49,8 +49,9 @@ window.onload = function()
                         '<span class="github-repo-star">' + repo.stars + '</span>' +
                     '</div>' +
                 '</li>';
-            list.append(dom);
+            doms += dom;
         }
+        $('#github-repos > .spinner').replaceWith(doms);
     }
 
     $.ajax({
