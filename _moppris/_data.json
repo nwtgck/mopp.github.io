@@ -11,8 +11,8 @@
         "title": "Products",
         "icon": "file"
     },
-    "contacts": {
-        "title": "Contacts",
+    "contact": {
+        "title": "Contact",
         "icon": "send-o"
     }
 }
