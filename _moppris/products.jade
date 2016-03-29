@@ -1,0 +1,85 @@
+include _utils.jade
+
+mixin repo-head(text)
+    +icon-head(2, 'fa fa-cube', text)
+
+mixin repo-link(repo)
+    .product-repo-link
+        ul
+            li
+                |Repository:
+                a(target="_blank" href = 'https://github.com/#{url}') #{repo}
+
+mixin img-link(img_url)
+    a(target="_blank" href = '#{img_url}')
+        img.pure-img(src = '#{img_url}')
+
+mixin img-grid(images)
+    .pure-g.product-img-grid
+        each img in images
+            .pure-u-24-24.pure-u-md-12-24.product-img-box
+                    +img-link(img)
+
+
++icon-head(1, 'fa fa-hashtag', 'Products')
+
+.pure-g#products-grid
+    .pure-u-24-24.pure-u-md-24-24.pad-box
+        +repo-head('Axel')
+        .product-info
+            +repo-link('mopp/Axel')
+            +img-grid(['img/products/axel_cute.png', 'img/products/axel_legacy_ss.png'])
+            .product-desc
+                p
+                    |ちまちまと作り続けている自作OSです。
+                    br
+                    |QEMUを使って開発しています。
+                    br
+                    |C言語とアセンブラだけで書かれており、以下の機能が実装されています。
+                ul
+                    li 物理メモリ管理 (BuddySystem)
+                    li 仮想メモリ管理 (TLSF Allocator)
+                    li ページング
+                    li 割り込み
+                    li マウス、キーボード入力
+                    li グラフィック
+                    li ATAデバイス制御
+                    li FAT32ファイルシステムの読み書き
+                    li プロセススイッチ
+                    li 簡単なユーザプロセス
+                    li システムコール(execveとfork)
+                p
+                    |行数はコメント部分抜きで約1万行、コードのファイル容量だと316KBです。
+                    |また、実行ファイルは101KBです。
+                    br
+                    |今まで書いてきたものの中では最大のものだけあって思い入れもあります。
+                p
+                    |勉強しながら作ってきたので、設計やコードの構造がいまいちになってきたので、現在、
+                    +link('https://github.com/mopp/Axel/tree/rusty', 'こっちのブランチ')
+                    |にてRustを使って書き直し中です。(なので、まだmasterほどの機能がありません。)
+
+    .pure-u-24-24.pure-u-md-12-24.pad-box
+        +repo-head('Block')
+        .product-info
+            +repo-link('mopp/Block')
+            .product-desc
+                p
+                    |よくあるブロック崩しです。
+                    br
+                    |このページを作るにあたって思い出したので載せて置きます。
+                    br
+                    |作り込みが甘いのは許してください。
+                +link('http://mopp.github.io/Block/', 'DEMO')
+
+    .pure-u-24-24.pure-u-md-12-24.pad-box
+        +repo-head('Vim Plugins')
+        .product-info
+            +repo-link('mopp/autodirmake.vim')
+            +repo-link('mopp/AOJ.vim')
+            +repo-link('mopp/mopkai.vim')
+            +repo-link('mopp/layoutplugin.vim')
+            .product-desc
+                p
+                    |元々VimmerでVimが好きですが、いろいろあって作った残骸のようなプラグイン達です。
+                    br
+                    |自戒の意味も込めていくつか載せておきます。

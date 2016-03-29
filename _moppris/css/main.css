@@ -50,7 +50,8 @@ html, button, input, select, textarea,
 .pure-g#github-repos > div,
 .pure-g#profile-grid > div,
 .pure-g#profile-grid-who > div,
-.pure-g#contact-grid > div
+.pure-g#contact-grid > div,
+.pure-g#products-grid > div
 {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -233,7 +234,7 @@ footer
 {
     padding: 0.25em;
     box-shadow: 1px 1px 5px #999;
-    border-radius:12px;
+    /* border-radius:12px; */
     text-align: center;
 }
 
@@ -318,6 +319,42 @@ footer
 {
     text-align: center;
     margin-bottom: 0.5em;
+}
+
+
+/* products.jade */
+.product-info
+{
+    margin: 0 1em;
+}
+
+.product-repo-link ul
+{
+    margin: 0 0 0 1em;
+    padding: 0;
+}
+
+.product-repo-link a
+{
+    margin-left: 0.5em;
+    word-wrap: break-word;
+}
+
+.product-img-box
+{
+    margin: auto 0;
+}
+
+.product-img-box img
+{
+    max-height: 300px;
+    margin: 0 auto;
+    padding: 0.5em;
+}
+
+.product-desc
+{
+    margin-top: 1em;
 }
 
 
