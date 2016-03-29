@@ -1,7 +1,4 @@
-mixin icon-head(h, icon, text)
-    div(class = 'icon-head-h#{h}')
-        i(class!= icon)
-        span= text
+include _utils.jade
 
 div.pure-g#index-icon-field
     for img in public.img.mopp_icons._contents
