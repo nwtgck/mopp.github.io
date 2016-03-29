@@ -49,7 +49,8 @@ html, button, input, select, textarea,
 .pure-g#index-icon-field > div,
 .pure-g#github-repos > div,
 .pure-g#profile-grid > div,
-.pure-g#profile-grid-who > div
+.pure-g#profile-grid-who > div,
+.pure-g#contact-grid > div
 {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -94,6 +95,11 @@ html, button, input, select, textarea,
     font-size: 1.1em;
     font-weight: normal;
     margin: 0.25em 0;
+}
+
+.pad-box
+{
+    padding: 0.5em 1em;
 }
 
 
@@ -274,11 +280,6 @@ footer
     font-size: 2em;
     margin-bottom: 1em;
     width: 100%;
-}
-
-#profile-grid > .pad-box
-{
-    padding: 0.5em 1em;
 }
 
 .profile-container

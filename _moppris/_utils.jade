@@ -23,3 +23,6 @@ mixin icon-showcase(icon, text)
     .icon-box
         i(class = '#{icon}')
         p= text
+
+mixin link(url, text)
+    a(target="_blank" href = '#{url}') #{text}
