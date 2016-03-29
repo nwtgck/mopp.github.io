@@ -169,7 +169,7 @@ footer
     position: absolute;
     bottom:0;
 
-    height: 3em;
+    padding: 0.5em 0;
     width: 100%;
     background: #d7003a;
     color: #191818;
@@ -177,9 +177,16 @@ footer
 
 #footer-content
 {
-    position: absolute;
-    top: 1em;
-    bottom: 1em;
+    text-align: right;
+    font-size: 0.8em;
+    margin: auto;
+    padding: 0 0.5em;
+}
+
+#footer-content a
+{
+    color: #302833;
+    margin-left: 0.5em;
 }
 
 
@@ -355,22 +362,4 @@ footer
 .product-desc
 {
     margin-top: 1em;
-}
-
-
-/* Responsive */
-@media (min-width: 48em)
-{
-    #footer-content
-    {
-        margin-left: 160px;
-    }
-}
-
-@media (max-width: 48em)
-{
-    #footer-content
-    {
-        margin-left: 5px;
-    }
 }

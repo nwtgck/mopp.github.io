@@ -1,3 +1,4 @@
+include _utils.jade
 doctype html
 html
     head
@@ -51,6 +52,19 @@ html
         footer
             div#footer-content
                 span &copy; 2016 Copyright mopp, All Rights Reserved.
+                span#powered-by
+                    br
+                    |Powered by
+                    +link('http://harpjs.com/', 'Harp')
+                    |,
+                    +link('http://purecss.io/', 'Pure.css')
+                    |,
+                    +link('http://jquery.com/', 'jQuery')
+                    |,
+                    +link('https://fortawesome.github.io/Font-Awesome/', 'Font Awesome')
+                    |,
+                    +link('http://devicon.fr/', 'Devicon')
+                    |.
 
         script(src = 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js')
         script(src = '/js/lib/ui.js')
