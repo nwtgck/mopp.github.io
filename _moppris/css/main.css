@@ -31,8 +31,7 @@ html, button, input, select, textarea,
 
 .header
 {
-    padding: 0 2em;
-    margin-bottom: 1em;
+    padding-top: 0.1em;
 }
 
 .header h1
@@ -48,6 +47,7 @@ html, button, input, select, textarea,
 
 /* General */
 .pure-g#index-icon-field > div,
+.pure-g#github-repos > div,
 .pure-g#profile-grid > div,
 .pure-g#profile-grid-who > div
 {
@@ -218,11 +218,15 @@ footer
     font-size: 4em;
 }
 
-#github-repos  li
+.github-repo
 {
-    margin: 0.5em 1em;
-    padding: 0.25em 0.5em;
-    border: solid 2px #89c3eb;
+    padding: 0.25em 1em;
+}
+
+.github-repo-frame
+{
+    padding: 0.25em;
+    box-shadow: 1px 1px 5px #999;
     border-radius:12px;
     text-align: center;
 }
