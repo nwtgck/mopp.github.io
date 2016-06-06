@@ -280,6 +280,14 @@ footer
     font-size: 0.8em;
 }
 
+.github-repo-desc
+{
+    padding: 0em 1em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
 
 /* profile.jade */
 .profile-header
