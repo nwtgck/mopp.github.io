@@ -3,15 +3,19 @@
         "title": "Home",
         "icon": "desktop"
     },
-    "profile": {
+    "/profile": {
         "title": "Profile",
         "icon": "user"
     },
-    "products": {
+    "/products": {
         "title": "Products",
         "icon": "file"
     },
-    "contact": {
+    "/articles": {
+        "title": "Articles",
+        "icon": "book"
+    },
+    "/contact": {
         "title": "Contact",
         "icon": "send-o"
     }
