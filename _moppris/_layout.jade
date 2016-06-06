@@ -32,10 +32,11 @@ html
                         li.pure-menu-item
                             img.circle_img#menu-mopp-icon(src = '/img/mopp_main_icon.png')
                         for obj, path in public._data
-                            li.pure-menu-item.menu-item-divided
+                            li.pure-menu-item
                                 a.pure-menu-link(href = '#{path}')
                                     i.menu-icon.fa(class = 'fa-#{obj.icon}')
                                     span #{obj.title}
+
                 div#menu-link-container
                     a(target="_blank" href = 'https://github.com/mopp'):                                    i.menu-link-icon.fa(class = 'fa-github')
                     a(target="_blank" href = 'https://twitter.com/mopp_jp'):                                i.menu-link-icon.fa(class = 'fa-twitter')

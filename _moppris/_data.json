@@ -11,7 +11,7 @@
         "title": "Products",
         "icon": "file"
     },
-    "/articles": {
+    "/articles/top": {
         "title": "Articles",
         "icon": "book"
     },
