@@ -42,6 +42,7 @@ html, button, input, select, textarea,
 .content
 {
     max-width: 100%;
+    font-family: 'Noto Sans JP';
 }
 
 

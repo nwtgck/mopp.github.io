@@ -2,5 +2,8 @@ include ../_utils.jade
 
 +icon-head(1, 'fa fa-hashtag', 'Articles')
 
-h1
-    p No-Article
++icon-head(2, 'fa fa-key', '自作OS')
+
+for obj, path in public.articles.os._data
+    a(href = '/articles/os/#{path}')
+        +item-line(obj.title)
