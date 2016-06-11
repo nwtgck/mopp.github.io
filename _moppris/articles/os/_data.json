@@ -1,5 +1,11 @@
 {
     "os00_intro": {
         "title": "00. OSを自作したい"
+    },
+    "os01_preparing": {
+        "title": "01. OS自作準備"
+    },
+    "os02_boot": {
+        "title": "02. ブートする"
     }
 }
