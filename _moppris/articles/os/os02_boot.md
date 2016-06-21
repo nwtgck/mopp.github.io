@@ -1,5 +1,5 @@
 Created: 2016-06-10  
-Updated: 2016-06-10
+Updated: 2016-06-22
 
 # 02. ブートする
 ***
@@ -14,7 +14,7 @@ Rustで書いたmain関数をブートする。
 
 ## OSはどのように呼び出されるのか
 ブート(Boot)とは起動という意味の英語です。  
-なので、PCの電源ボタンを押して、OSを起動させることをOSをブートさせるといいます。
+なので、PCの電源ボタンを押して、OSを起動させることをOSをブートするといいます。
 ここでは、ブートについて見ていきます。
 
 一般的なPCで電源を押して、OSが起動するまでの流れを以下に示します。  
@@ -101,9 +101,25 @@ grubの中の人も大変そうです。
 ここからやっとプログラムを書いていきます。
 が、Rustではなく、アセンブラです。
 
+とりあえず、プログラムを出してしまいましょう。
+```asm
+;TODO
+```
+***
 
 
-### References
+
+## Cargoを使ったビルド
+Cargo(かーご)は、Rust公式のパッケージマネージャです。
+公式サイトにはそう書いてありますが、個人的にはRustのプロジェクトビルドツールという感じがします。
+ここでの使用用途も自作OSプロジェクトのビルドツールとして使います。
+ただし、Cargoの開発者が想定している正しい使い方とは少し離れているので注意が必要です。
+Cargoについての詳細は[公式ガイド](https://crates.io/)を参考にしてください。
+***
+
+
+
+## References
 * \[1\]. Grub2 repository, [http://git.savannah.gnu.org/cgit/grub.git/tree/doc?h=multiboot2](http://git.savannah.gnu.org/cgit/grub.git/tree/doc?h=multiboot2)
 * \[2\]. Multiboot, [http://wiki.osdev.org/Multiboot](http://wiki.osdev.org/Multiboot)
 * \[3\]. Tips  マルチブート仕様, [http://softwaretechnique.jp/OS_Development/Tips/multi_boot.html](http://softwaretechnique.jp/OS_Development/Tips/multi_boot.html)
