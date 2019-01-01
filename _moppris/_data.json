@@ -7,14 +7,6 @@
         "title": "Profile",
         "icon": "user"
     },
-    "/products": {
-        "title": "Products",
-        "icon": "file"
-    },
-    "/articles/top": {
-        "title": "Articles",
-        "icon": "book"
-    },
     "/contact": {
         "title": "Contact",
         "icon": "send-o"
